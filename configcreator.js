@@ -27,8 +27,8 @@ async function getSecretValue() {
   // Function to save JSON value to a file without stringify
   function saveToJsonFile(jsonValue) {
     try {
-      fs.writeFileSync("output.json", jsonValue, { encoding: "utf-8" });
-      console.log("JSON value saved to output.json");
+      fs.writeFileSync("config.json", jsonValue, { encoding: "utf-8" });
+      console.log("JSON value saved to config.json");
     } catch (err) {
       console.error("Error writing to file:", err.message);
       throw err;
